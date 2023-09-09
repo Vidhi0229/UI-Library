@@ -7,8 +7,15 @@ class Tooltip{
         const tip = document.createElement('div');
         tip.classList.add('tip');
         tip.textContent = this.message;
-        //console.log(tip.message)
         this.element.appendChild(tip);
+
+        this.element.addEventListener('mouseenter', () => {
+            tip.classList.add('active');
+        });
+
+        this.element.addEventListener('mouseleave', () => {
+            tip.classList.remove('active');
+        })
     }
 }
 
