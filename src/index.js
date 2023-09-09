@@ -25,5 +25,5 @@ snackbar.init()
 
 const button = document.querySelector('button');
 button.addEventListener('click', () => {
-    snackbar.show("You click me")
+    snackbar.show("You clicked me")
 })
