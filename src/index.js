@@ -1,3 +1,4 @@
+import Tooltip from './ui/tooltip'
 
-const greet = name => console.log(`Hello ${name}`)
-greet("vidhi")
+const tooltip = new Tooltip(document.querySelector('.tooltip'))
+tooltip.init()
