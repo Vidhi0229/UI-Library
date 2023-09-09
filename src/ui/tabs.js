@@ -1,4 +1,4 @@
-
+import './styles/tabs.css'
 
 class Tabs {
     constructor(container){
